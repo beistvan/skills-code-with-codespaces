@@ -5,6 +5,10 @@ name: Step 1, Create codespace and push code
 
 # This will run every time we push to main.
 # Reference: https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
+env:
+  FILE: codespace.md        # or the file you want to check
+  SEARCH: Hello             # or the string you want to find
+
 on:
   workflow_dispatch:
   push:
